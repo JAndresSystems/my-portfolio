@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,300;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-accent: #00e5ff; /* Hyper Cyan */
+  --color-accent-dark: #0082ff;
+  --color-bg-dark: #030712; 
+  --color-bg-light: #cbd5e1; /* Much softer, more elegant slate for light mode */
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased selection:bg-accent/30 selection:text-white transition-colors duration-500 overflow-x-hidden;
+  }
+
+  .dark body {
+    @apply bg-slate-950 text-slate-200;
+  }
+
+  :root:not(.dark) body {
+    @apply bg-slate-200 text-slate-900;
+  }
+}
+
+.glass {
+  @apply backdrop-blur-2xl bg-white/[0.03] border border-white/5 dark:bg-black/40 transition-all duration-500;
+}
+
+:root:not(.dark) .glass {
+  @apply bg-slate-900/[0.05] border-slate-900/10;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 font-bold tracking-tighter;
+}
+
+.card-shine {
+  @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_4s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/[0.03] before:to-transparent;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
