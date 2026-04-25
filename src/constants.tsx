@@ -55,7 +55,7 @@ export const TRANSLATIONS = {
         frameworks: 'Frameworks',
         devops: 'DevOps & Cloud',
         databases: 'Databases',
-        analytics: 'BI & Analytics'
+        analytics: 'BI & Analítica'
       }
     },
     projects: {
@@ -108,7 +108,8 @@ export const TRANSLATIONS = {
         languages: 'Languages',
         frameworks: 'Frameworks',
         devops: 'DevOps & Cloud',
-        databases: 'Databases'
+        databases: 'Databases',
+        analytics: 'BI & Analytics'
       }
     },
     projects: {
