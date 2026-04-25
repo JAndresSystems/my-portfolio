@@ -84,8 +84,8 @@ export default function Hero() {
               </div>
             </div>
             
-            {/* Si tienes una foto real, úsala así: */}
-             <img   src="public\img-profile\Img-Perfil2.jpg"   alt="Jairo Andrés"    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 z-10" />
+            {/* FOTO */}
+            <img    src="/img-profile/Img-Perfil2.jpg"     alt="Jairo Andrés"   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 z-10" />
           </div>
 
           {/* Labels deck */}
