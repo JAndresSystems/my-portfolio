@@ -66,17 +66,7 @@ motion: ^12.23.24
 - **clean**: `npm run clean`
 - **lint**: `npm run lint`
 
-## 📸 Screenshots
 
-> **Tip:** You can auto-generate a beautiful project mockup image using the **Screenshot** button above!
-
-<p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Main+Application+View" alt="Main Application View" width="80%"/>
-</p>
-
-<p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Feature+Showcase" alt="Feature Showcase" width="80%"/>
-</p>
 
 ## 📁 Project Structure
 
@@ -131,7 +121,7 @@ Contributions are welcome! Here's how you can help:
 5. **Push** to your branch: `git push origin feature/your-feature`
 6. **Open** a pull request
 
-Please ensure your code follows the project's style guidelines and includes tests where applicable.
+
 
 ---
 *This README was generated with ❤️ by [ReadmeBuddy](https://readmebuddy.com)*
